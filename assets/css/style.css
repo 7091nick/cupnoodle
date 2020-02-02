@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+}
+main{
+    height: 100%;
+    background-color: #f0e3d0;
+    padding: 0 20px;
+}
+section{
+    padding-top: 4%;
+}
+
+
+/* BACKGROUND */
+.inner{
+    width: 100%;
+    /* resize */
+    height: 5300px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    z-index: -2;
+    overflow: hidden;
+}
+.backimage{
+    height: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    background-image: url(../img/f-illust-2_l4.png);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    z-index: -1;
+}
+
+
+/*  CONTENTS */
+.h2_sec{
+    clear: left;
+    width: 20%;
+    margin: 0 auto 2%;
+    border: 4px solid crimson;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.h3_sec{
+    width: 60%;
+    margin: 0 auto;
+}
+.p_sec{
+    width: 50%;
+    margin: 0 auto 5%;
+}
+.p_front{
+    position: absolute;
+    left: 25%;
+    z-index: 10;
+}
+
+
+/*HEADER*/
+.top{
+    height: 520px;
+    background-image: url(../img/maxresdefault.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.top h1{
+    width: 15%;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+.logo{
+    width: 100%;
+    border: 1px solid crimson;
+}
+
+
+/* NAV */
+.menu ul{
+    padding-left: 0;
+    list-style: none;
+}
+.menu>ul>li{
+    float: left;
+    display: block;
+    height: 100px;
+    width: 25%;
+    list-style: none;
+    background-color: white;
+    border: 15px solid hsl(36, 52%, 88%);
+    border-right: none;
+}
+.menu>ul>li>a{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    line-height: 4;
+}
+.menu>ul>li>a:hover{
+    opacity: 0.5;
+}
+.menu>ul>li:nth-of-type(1){
+    border-left: none;
+}
+
+
+/* SECTON-ABOUT */
+.about{
+    padding-top: 200px;
+}
+.items{
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.items li{
+    display: inline-block;
+    margin: 0 2%;
+    width: 24%;
+    list-style: none;
+}
+.items>li>a>div{
+    position: relative;
+}
+.items>li>a>div>img:nth-of-type(1){
+    width: 100%;
+}
+.items>li>a>div>img:nth-of-type(2){
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: 40%;
+}
+.items>li>a:hover .hov_circle{
+    opacity: 0.7;
+}
+.items>li>a:hover .hov_cup{
+    bottom:50%;
+}
+
+
+/* SECTION-FEATURE */
+.feature{
+    position: relative;
+    margin-bottom: 80%;
+}
+.text_feature1{
+    width: 100%;
+}
+.text_feature2{
+    width: 100%;
+}
+.cupmen{
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    top: 100%;
+    z-index: 2;
+    padding-top: 5%;
+}
+
+
+/* SECTION-CHARM*/
+.text_charm{
+    width: 100%;
+}
+/* resize */
+.wrap_charm{
+    height: 300px;
+}
+.wrap_charm video{
+    display: inline-block;
+    width: 40%;
+    border-radius: 10%;
+}
+.position_charm{
+    margin-left: 10%;
+}
+.position_charm2{
+    margin-left: 35%;
+}
+.h3_charm{
+    display: inline-block;
+    width: 15%;
+}
+
+
+/* SECTION-TVCM */
+.tvcm>.wrap_tvcm>ul>li{
+    list-style: none;
+    float: left;
+    /* resize */
+    width: 50%;
+    height: 400px;
+    padding: 3%;
+}
+.youtube{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.wrap_tvcm{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* FOOTER */
+.bottom{
+    height: 80px;
+    background-color: #f0e3d0;
+}
+.wrap_bottom_right{
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
+.wrap_bottom_right>a{
+    color: white;
+    text-decoration: none;
+}
+.bottom_right{
+    height: 100%;
+    padding-top: 5px;
+    background-color: crimson;
+    text-decoration: none;
+    text-align: center;
+}
+.bottom_left>ul{
+    padding: 0;
+}
+.bottom_left>ul>li{
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.bottom_left>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+.bottom_left>small{
+    display: block;
+    margin-left: 10px;
+    padding-top: 5px;
+    font-size: 1px;
+    clear: left;
+    color: dimgrey;
+}
+.bottom_left>ul>.sns{
+    font-size: 40px;
+    line-height: 0;
+}
